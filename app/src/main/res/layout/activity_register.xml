@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.biometricfacedetection.RegisterActivity">
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="110dp"
+        app:srcCompat="@drawable/animated_check"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginStart="110dp"
+
+        android:visibility="visible"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

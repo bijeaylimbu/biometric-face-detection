@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activitymain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+    tools:context="com.example.biometricfacedetection.MainActivity">
+
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+
+        android:layout_marginLeft="@dimen/_60sdp"
+        android:layout_marginTop='@dimen/_270sdp'
+        android:background="@drawable/button_circle"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/register"
+
+        android:textSize="@dimen/_25sdp"
+
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+
+
+
+
+    <Button
+
+        android:id="@+id/takePhotoButton"
+
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_140sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop='@dimen/_280sdp'
+        android:background="@drawable/button_circle"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Capture my photo"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        />
+
+    <ImageView
+        android:id="@+id/Imageview2"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_180sdp"
+
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src='@drawable/capture'
+
+
+        />
+
+
+    <RelativeLayout
+        android:layout_marginLeft="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:id="@+id/relativelayout"
+
+
+        >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_220sdp"
+                app:cardCornerRadius="@dimen/_100sdp"
+                android:id="@+id/relative"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_45sdp"
+
+                >
+
+
+
+   <com.example.biometricfacedetection.camera.CameraSurfaceView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+
+       >
+
+
+
+
+
+
+
+   </com.example.biometricfacedetection.camera.CameraSurfaceView>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_210sdp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_horizontal"
+        android:text="@string/face_recognition"
+        android:textAlignment="center"
+        android:textSize="@dimen/_40sdp"
+        android:textStyle="bold"
+
+        />
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_130sdp"
+
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:visibility="invisible"
+
+        app:srcCompat="@drawable/animated_check"
+
+        tools:ignore="VectorDrawableCompat" />
+
+
+</RelativeLayout>
